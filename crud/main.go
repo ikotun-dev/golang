@@ -8,7 +8,7 @@ import (
 	"strconv",
 	"github.com/gorilla/mux"
 )
-
+ 
 type Movie struct{
 	ID string `json:"id"`
 	Isbn string `json:"isbn"`
@@ -23,6 +23,12 @@ type Director struct {
 }
 
 var movies []Movie
+func getMovies(w http.ResponseWriter, r *http.Request){
+	w.Header.
+}
+
 func main() { 
 	r := mux.NewRouter()
+
+	r.Handle
 }
