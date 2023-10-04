@@ -18,5 +18,11 @@ type Movie struct{
 }
 
 type Director struct { 
+	Firstname string `json:"firstname"`
+	Lastname string `json:"lastname"`
+}
 
+var movies []Movie
+func main() { 
+	r := mux.NewRouter()
 }
